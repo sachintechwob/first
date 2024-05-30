@@ -1,0 +1,305 @@
+/* here you can put your own css to customize and override the theme */
+.row{
+        /*margin: 10px;*/
+    }
+    .box{
+        height: 280px;
+        width: 250px; 
+        /* border: 1px solid; */
+        margin: 10px 6px;
+        padding: 3px;
+    }
+    .mainBox{
+            border-radius: 0;
+            box-shadow: #959da533 0 8px 24px;
+    }
+    .video-card .thumbnail {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+        z-index: 5;
+        background-color: transparent;
+        visibility: hidden;
+    }
+
+    .video-card.thumbnail {
+        cursor: pointer;
+    }
+
+    /*img.gifImage {
+        position: relative;
+        top: -142px;
+        z-index: -999999;
+    }
+
+    .thumbnail > .mainImg:hover {
+        display: none;
+    }
+    .thumbnail > .gifImage:hover {
+        display: block;
+    }*/
+
+    .content{
+        display: inline-block;
+    }
+
+    .edit-btn{
+        color: #fff!important;
+        font-weight: 500;
+        line-height: 26px;
+        padding: 3px 20px 1px;
+        border-color: #ed256b;
+        border-radius: 25px !important;
+        background: #E02222;
+        cursor: pointer;
+    }
+
+    .content.price-div.pricebtn {
+        background: green;
+        padding: 3px 20px 1px;
+        border-color: #ed256b;
+        border-radius: 25px !important;
+        line-height: 23px;
+        color: #fff;
+    }
+    .display-name {
+        font-size: 14px;
+        margin: 14px 0;
+        font-weight: 300;
+        cursor: pointer;
+    }
+    .right-position
+    {
+        float: right;
+        font-size: 14px;
+    }
+    .edit-section{
+        margin-top:12px; 
+    }
+    .pay-icon{
+        cursor: pointer;
+        z-index: 1;
+        width: 130px;
+        height: 130px;
+        /*left: 50%;
+        top: 50%;*/
+        padding: auto auto;
+        transform: translate(40%,0%);
+        position: absolute;
+        background: url(../../../uploads/icon-play.svg) no-repeat;
+        background-size: auto 40%;
+        background-position: center;
+        visibility: visible;
+        opacity: 1;
+        transition: opacity .15s ease-in-out;
+        transition: transform .15s ease-in-out;
+    }
+
+    @media (min-width: 576px) and (max-width: 959px) {
+        .box {
+            height: 250px;
+            width: 192px;
+            /* border: 1px solid; */
+            margin: 20px;
+        }
+        .pay-icon {
+            cursor: pointer;
+            z-index: 1;
+            width: 130px;
+            height: 130px;
+            padding: auto auto;
+            transform: translate(20%,-5%);
+            position: absolute;
+            background: url(../../../uploads/icon-play.svg) no-repeat;
+            background-size: auto 40%;
+            background-position: center;
+            visibility: visible;
+            opacity: 1;
+            transition: opacity .15s ease-in-out;
+            transition: transform .15s ease-in-out;
+        }
+    }
+
+
+
+
+    /**********************************************/
+    /*::selection{
+  background: #1a75ff;
+  color: #fff;
+}*/
+.wrapper{
+  overflow: hidden;
+  max-width: 390px;
+  background: #fff;
+  padding: 0px 5px 15px;
+  border-radius: 15px;
+  box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+}
+.wrapper .title-text{
+  display: flex;
+  width: 200%;
+}
+.wrapper .title{
+  width: 50%;
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.wrapper .slide-controls{
+  position: relative;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  overflow: hidden;
+  margin: 30px 0 10px 0;
+  justify-content: space-between;
+  border: 1px solid lightgrey;
+  border-radius: 15px;
+}
+.slide-controls .slide{
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 48px;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.6s ease;
+}
+.slide-controls label.signup{
+  color: #000;
+}
+.slide-controls .slider-tab{
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  left: 0;
+  z-index: 0;
+  border-radius: 15px;
+  background: -webkit-linear-gradient(left,#E02222,#E02222,#E02222,#0073e6);
+  transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+input[type="radio"]{
+  display: none;
+}
+#signup:checked ~ .slider-tab{
+  left: 50%;
+}
+#signup:checked ~ label.signup{
+  color: #fff;
+  cursor: default;
+  user-select: none;
+}
+#signup:checked ~ label.login{
+  color: #000;
+}
+#login:checked ~ label.signup{
+  color: #000;
+}
+#login:checked ~ label.login{
+  cursor: default;
+  user-select: none;
+}
+.wrapper .form-container{
+  width: 100%;
+  overflow: hidden;
+}
+.form-container .form-inner{
+  display: flex;
+  width: 200%;
+}
+.form-container .form-inner form{
+  width: 50%;
+  transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.form-inner form .field{
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+}
+.form-inner form .field input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding-left: 15px;
+  border-radius: 15px;
+  border: 1px solid lightgrey;
+  border-bottom-width: 2px;
+  font-size: 17px;
+  transition: all 0.3s ease;
+}
+.form-inner form .field input:focus{
+  border-color: #1a75ff;
+  /* box-shadow: inset 0 0 3px #fb6aae; */
+}
+.form-inner form .field input::placeholder{
+  color: #999;
+  transition: all 0.3s ease;
+}
+form .field input:focus::placeholder{
+  color: #1a75ff;
+}
+.form-inner form .pass-link{
+  margin-top: 5px;
+}
+.form-inner form .signup-link{
+  text-align: center;
+  margin-top: 30px;
+}
+.form-inner form .pass-link a,
+.form-inner form .signup-link a{
+  color: #1a75ff;
+  text-decoration: none;
+}
+.form-inner form .pass-link a:hover,
+.form-inner form .signup-link a:hover{
+  text-decoration: underline;
+}
+form .btn{
+  height: 50px;
+  width: 100%;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+form .btn .btn-layer{
+  height: 100%;
+  width: 300%;
+  position: absolute;
+  left: -100%;
+  background: #E02222;
+  border-radius: 15px;
+  transition: all 0.4s ease;
+}
+form .btn:hover .btn-layer{
+  left: 0;
+}
+form .btn input[type="submit"]{
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  background: none;
+  border: none;
+  color: #fff;
+  padding-left: 0;
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.modal-dialog {
+    width: 392px;
+    margin: 30px auto;
+}
+
+.modal-body {
+    position: relative;
+    padding: 0px 0px;
+}
